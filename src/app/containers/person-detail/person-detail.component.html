@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-3">
+    <h3>Person Details:</h3>
+    <div *ngIf="personById" class="border">
+      <pre>{{personById.id}}</pre>
+      <pre>{{personById.firstName}}</pre>
+      <pre>{{personById.lastName}}</pre>
+      <pre>{{personById.gender}}</pre>
+      <pre>{{personById.email}}</pre>
+      <pre>{{personById.phoneNumber}}</pre>
+      <pre>{{personById.createdAt}}</pre>
+      <pre>{{personById.referredBy}}</pre>
+      <pre>{{personById.referrelCode}}</pre>
+      <pre>{{personById.countryCode}}</pre>
+      <pre>{{personById.emailVerfiyStatus}}</pre>
+      <pre>{{personById.phoneVerfiyStatus}}</pre>
+    </div>
+    <button class="btn btn-primary m-3" (click)="backToList()">Back to list</button>
+  </div>
+</div>

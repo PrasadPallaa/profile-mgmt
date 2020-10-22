@@ -1,0 +1,17 @@
+<div class="row mt-5">
+  <div class="col-3"></div>
+  <div class="col-3">
+    <form [formGroup]="userForm">
+      <div>
+        <label for="username">username:</label>
+        <input appCharactersonly type="text" class="form-control" formControlName="user">
+      </div>
+      <div>
+        <label for="phoneNumber">Phone:</label>
+        <input  appNumbersonly  maxlength="10" type="text" class="form-control" formControlName="phoneNumber">
+      </div>
+    </form>
+  </div>
+  <div class="col-3"></div>
+</div>
+
